@@ -1,0 +1,125 @@
+body {
+    background-color: #48cb70;
+}
+
+.grid {
+    display: grid;
+    height: 100vh;
+    gap: 100px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
+.intro-2 {   
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    flex-direction: column;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border-left: 50px;
+    padding: 10px;
+    background-color: #277840;
+    border-radius: 20px;
+    border: 1px solid #05281c;
+}
+
+.intro-2 > div {
+    background-color: antiquewhite;
+    border: 1px solid #05281c;
+    border-radius: 10px;
+}
+
+.intro-2 h2 {
+    font-size: 1.5rem;
+    font-style: italic;
+    font-family: cursive;
+    font-weight: normal;
+}
+
+.intro-2 p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.intro-3 {
+    background-color: #e26f45;
+    border: 5px solid #a85233;
+    border-radius: 10px;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: grid;
+    grid-template-rows: 5px auto;
+}
+
+#new {
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+#new-flex {
+    grid-row-start: 2;
+    grid-row-end: 2;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.intro * {
+    padding: 0px;
+    margin: 5px;
+}
+
+.intro h1 {
+    color: rgb(202, 250, 201);
+}
+
+.intro-3  h3 {
+    font-style: italic;
+    font-size: 1.5rem;
+    padding-left: 50px;
+    color: antiquewhite;
+    text-shadow: 4px 4px 8px black;    
+}
+
+div.card {
+    width: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+
+div.header {
+    background-color: #8d2b06;
+    color: white;
+    padding: 10px;
+    font-size: 40px;
+}
+
+div.container {
+    padding: 10px;
+}
+
+.container {
+    background-color: antiquewhite;
+}
+
+.container > p {
+    font-family: cursive;
+    font-size: 20px;
+}
